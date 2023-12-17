@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+    background-image: url("image/truc.jpg");
+    background-size: cover; /* La valeur cover permet de couvrir toute la fenêtre */
+    background-position: top; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+} 
+
+.square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    
+    /* display: none; */
+    /* background-color: rgba(255, 255, 255, 0); */
+    
+}
+
+.square_red {
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* display: none; */
+    /* background-color: rgba(255, 255, 255, 0); */
+    
+}
+
+#blueSquare {
+    background-color: blue;
+}
+
+#redSquare {
+    background-color: red;
+}
+
+
+#blackBar {
+    background-color: black;
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+#movingBar {
+    background-color: green; /* Couleur de la barre qui se déplace */
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    width: 5%; /* La barre avance sur 5 % de l'écran */
+    height: 2px;
+}
+
+
+.rectangle_container_15,
+.rectangle_container_10 {
+    /*background-color: yellow;  Couleur du rectangle */
+    position: fixed;
+    bottom: 0; /* Toucher le bas de l'écran */
+    height: 100px; /* Hauteur du rectangle (ajustez selon vos besoins) */
+}
+
+.rectangle_container_15 {
+    width: 15%; /* Largeur du rectangle */
+    top: 80%; /* Arête supérieure à 20 % de la hauteur par rapport au bas de l'écran */
+}
+
+.rectangle_container_10 {
+    width: 10%; /* Largeur du rectangle */
+    top: 80%; /* Arête supérieure à 20 % de la hauteur par rapport au bas de l'écran */
+}
+
+#rectangleContainer1 {
+    left: 10%; /* Position à 10 % de l'écran vers la droite */
+}
+
+#rectangleContainer2 {
+    left: 45%; /* Position à 35 % de l'écran vers la droite */
+}
+
+#rectangleContainer3 {
+    left: 70%; /* Position à 60 % de l'écran vers la droite */
+}
+
+#p_grise
+{
+    width: 21%;
+    height: 24%;
+    position: absolute;
+    top: 76.5%;
+    left: 39.5%;
+    z-index: 1; /* Assure que l'image est au-dessus du contenu */
+}
+#p_jaune
+{
+    width: 31%;
+    height: 24%;
+    position: absolute;
+    top: 76.5%;
+    left: 2%;
+    z-index: 1; /* Assure que l'image est au-dessus du contenu */
+}
+#p_verte
+{
+    width: 31%;
+    height: 24%;
+    position: absolute;
+    top: 76.5%;
+    left: 62%;
+    z-index: 1; /* Assure que l'image est au-dessus du contenu */
+}
+

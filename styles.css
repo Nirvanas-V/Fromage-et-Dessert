@@ -1,0 +1,158 @@
+/* styles.css */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 75px;
+    background-color: #4caf50;
+    color: rgb(0, 255, 38);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    background-image: url('image/header.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5%;
+
+
+}
+
+header h1 {
+    font-family: 'Your Preferred Font', sans-serif; /* Choisir une police de caractères */
+    font-size: 2em; /* Taille de la police, ajustez selon vos préférences */
+    color: #88f88e; /* Couleur du texte */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ombre du texte pour le rendre plus lisible sur un fond coloré */
+    letter-spacing: 1px; /* Espacement des lettres */
+    margin: 0; /* Supprime la marge par défaut du h1 */
+}
+main {
+    background-color: #c8e6c9; /* Fond vert pour le main */
+    border: 1px solid black;
+
+}
+.left-content img {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px; 
+    margin-left: 5%;
+}
+
+.hidden-image {
+    display: none;
+    max-width:auto; /* Ajustez la largeur selon vos besoins */
+    max-height: auto;
+    margin-top: 10px; /* Espace entre le logo et la nouvelle image */
+}
+
+/* Effet de survol pour le logo */
+.hover-trigger:hover + .hidden-image {
+    display: block;
+}
+
+.right-content {
+    margin-right: 10px;
+}
+
+.right-content button {
+    padding: 8px 15px;
+    background-color: #fff; 
+    color: #4caf50; 
+    border: 2px solid #4caf50;
+    border-radius: 5px; 
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.right-content button:hover {
+    background-color: #4caf50; 
+    color: #fff;
+}
+.image-container img {
+    border: 2px solid black; /* Ajustez l'épaisseur et la couleur de la bordure selon vos besoins */
+}
+aside {
+    background-color: #388e3c;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0.5%;
+    margin-left: 0px;
+    width: 20%;
+    flex: 0 0 auto;
+    height: auto;
+    order: 1; 
+    border: 1px solid black; 
+    background-image: url('image/simple.jpg');
+    background-size: cover;
+    font-size: 18px;
+}
+
+
+aside li {
+    margin-bottom: 5px;
+}
+aside ul li a {
+  text-decoration: none;
+  color: #ffffff; 
+}
+
+
+aside ul li a:hover {
+  color: #ffcc00; 
+}
+.content {
+    display: flex;
+    flex: 1;
+}
+h2{
+    text-align: center;
+}
+article {
+    padding: 10px;
+    margin: 0.5%;
+    margin-right: 0px;
+    background-color: #c8e6c9;
+    flex: 1;
+    order: 2; 
+    border: 1px solid black; 
+    text-align: center; 
+    line-height: 1.5; 
+    background-image: url('image/fond_section.jpg');
+    background-size: cover;
+    color: white;
+}
+
+article h2{
+    margin-top: 15%;
+}
+article button {
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    padding: 12px 20px;
+    width: auto; 
+}
+footer {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    border: 1px solid black; 
+    margin-top: 0.5%;
+}
+
+.center-text{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align : center;
+}

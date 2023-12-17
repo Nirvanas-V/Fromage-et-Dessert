@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fromage et dessert</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function reloadHomePage() {
+            window.location.href = 'index.html';
+        }
+        function changeImage(isHovered) {
+        var logo = document.getElementById('logo');
+        if (isHovered) {
+            logo.src = 'image/charlie.png'; // Chemin de la nouvelle image
+        } else {
+            logo.src = 'image/logo.png'; // Revenir au logo initial
+        }
+    }
+    </script>
+</head>
+<body>
+    <header id="header">
+        <div class="left-content">
+            <img src="image/logo.png" alt="Logo Ecolo'jeu" id="logo" onclick="reloadHomePage()" class="hover-trigger" onmouseover="changeImage(true)" onmouseout="changeImage(false)">
+        </div>
+        <h1>Ecolo'jeux</h1>
+        <div class="right-content">
+            <button id="modenoel"> Mode noël</button>
+            <a href="aProposPage.php"><button>À propos de nous</button></a>
+        </div>
+    </header>
+
+    <section class="content">
+        <article id="article">
+            <div class="article-content">
+                <h2 class="texte">Participer au jeu principal</h2>
+                <p class="texte">
+                    En 2023, de nombreuses études scientifiques montrent les effets dramatiques des émissions de gaz à effet de serre sur 
+                    le climat, la biodiversité, etc… <br>Cependant, Il y a énormément d’informations sur internet : des bonnes mais surtout des mauvaises.<br>
+                     Aujourd’hui, il est difficile de savoir quelles actions on peut mener dans la lutte contre le réchauffement climatique. <br>
+                     Notre projet, c’est d’utiliser le web en créant un jeu ludique pour indiquer les bonnes pratiques écologiques à adopter. <br>
+                     Nous avons créé un jeu “Visual novel ” de vulgarisation scientifique pour informer et sensibiliser à des pratiques plus vertes.
+                </p>
+            </div>
+            <button>
+                <a href="./visual_novel/">jouer</a>
+            </button>
+        </article>
+        
+
+        <aside id="aside">
+            <h1>Participer aux minis jeux :</h1>
+            <ul>
+                <li><a href="./sensiRoutiere/">sensiRoutiere</a></li>
+                <li><a href="404.html">Tetris</a></li>
+                <li><a href="./jeu_tri/">Jeu de Tri</a></li>
+            </ul>
+            <h1>Voir les autres défis :</h1>
+            <ul>
+                <li><a href="https://youtu.be/veO9ynDU1kk?si=E4-kxfTH3LY14rmH">Le pitch</a></li>
+            </ul>
+        </aside>
+        
+    </section>
+
+    <footer id="footer">
+        <p>&copy;<a href="https://github.com/Nirvanas-V/Fromage-et-Dessert">lien vers le dépot github</a></p>
+        <p>&copy;<a href="https://youtu.be/veO9ynDU1kk?si=E4-kxfTH3LY14rmH">lien vers la vidéo ytb (pitch)</a></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
